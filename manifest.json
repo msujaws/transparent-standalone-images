@@ -7,7 +7,12 @@
     "64": "appearance-64.png"
   },
   "content_scripts": [{
-    "matches": ["*://*/*.png","*://*/*.apng","*://*/*.gif","*://*/*.ico","*://*/*.webp","*://*/*.jxr"],
+    "matches": ["file:///*.png",  "*://*/*.png",
+                "file:///*.apng", "*://*/*.apng",
+                "file:///*.gif",  "*://*/*.gif",
+                "file:///*.ico",  "*://*/*.ico",
+                "file:///*.webp", "*://*/*.webp",
+                "file:///*.jxr",  "*://*/*.jxr"],
     "css": ["transparent_image.css"]
   }]
 }
