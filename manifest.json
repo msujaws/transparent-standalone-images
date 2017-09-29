@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Transparent Standalone Images",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "This add-on renders standalone images on a transparent background, so you can see the image in all its glory!",
   "icons": {
     "64": "appearance-64.png"
