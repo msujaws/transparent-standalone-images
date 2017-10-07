@@ -1,18 +1,17 @@
 {
   "manifest_version": 2,
   "name": "Transparent Standalone Images",
-  "version": "2.0.1",
+  "version": "2.1",
   "description": "This add-on renders standalone images on a transparent background, so you can see the image in all its glory!",
   "icons": {
     "64": "appearance-64.png"
   },
+  "background": {
+    "scripts": ["background.js"]
+  },
   "content_scripts": [{
-    "matches": ["file:///*.png",  "*://*/*.png",
-                "file:///*.apng", "*://*/*.apng",
-                "file:///*.gif",  "*://*/*.gif",
-                "file:///*.ico",  "*://*/*.ico",
-                "file:///*.webp", "*://*/*.webp",
-                "file:///*.jxr",  "*://*/*.jxr"],
+    "matches": ["file:///*", "*://*/*"],
+    "js": ["content.js"],
     "css": ["transparent_image.css"]
   }]
 }
