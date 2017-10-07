@@ -1,4 +1,3 @@
-browser.tabs.onActivated.addListener(async function({tabId, windowId}) => {
 browser.runtime.onMessage((message, sender) => {
   if (message != "ImageDocument") {
     return;
